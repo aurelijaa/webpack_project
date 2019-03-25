@@ -1,0 +1,26 @@
+body{
+  display: flex;
+  background: purple;
+}
+#app {
+  position: relative;
+  width: 212px;
+  height: 100px;
+  box-sizing: content-box; }
+  #app:before, #app:after {
+    content: '';
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid red;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg); }
+  #app:after {
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg); }
+
